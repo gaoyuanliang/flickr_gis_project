@@ -1,5 +1,6 @@
-# gis_homework
+# gis project
 
+analyzing flickr photo data by geo-locations of these photos, by using GIS technologies, including PostgreSQL, PostGIS, QGIS
 
 <img src="WX20201128-224809@2x.png" width="500">
 
