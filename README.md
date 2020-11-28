@@ -17,11 +17,15 @@ union all
 select geom, st_length(geom) as line_length, 'routeb' as route_name  from routeb
 union all 
 select geom, st_length(geom) as line_length, 'routec' as route_name  from routec;
+
+
 drop table if exists route_length;
 create table route_length as 
 select route_name, sum(line_length) as route_length
 from route_line_length
 group by route_name;
+
+
 select * from route_length;
 select route_length.route_name, 
 route_photo_count.photo_count/route_length.route_length popularity,
