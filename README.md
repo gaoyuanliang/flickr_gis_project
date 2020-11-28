@@ -7,6 +7,10 @@ analyzing flickr photo data by geo-locations of these photos, by using GIS techn
 
 <img src="WX20201128-224819@2x.png" width="500">
 
+## Route popularity
+
+Use the flickr photo data to show the popularity of each route according to how many photos have been taken 
+along the route within a 25m buffer. You should normalise this by route length (i.e. photos per metre).
 
 ```sql
 
