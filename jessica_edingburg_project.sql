@@ -53,7 +53,7 @@ WHERE a.id != b.id AND b.id = 16;
 
 
 
-SELECT dftest.id,ST_ASTEXT (dftest.geom) `
+SELECT dftest.id,ST_ASTEXT (dftest.geom) 
 FROM dftest
 JOIN (SELECT * FROM dftest WHERE id=12) line ON 
 ST_INTERSECTS(dftest.geom,ST_BUFFER(line.geom,3));
